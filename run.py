@@ -114,7 +114,7 @@ def test_model(model, **kwargs):
     metadatas = {}
 
     now = datetime.now()
-    metadatas['DATETIME'] = now.strftime("%d_%m_%Y_%H:%M")
+    metadatas['DATETIME'] = now.strftime("%d_%m_%Y_%H-%M")
     metadatas['MODEL'] = os.path.basename(model_path).split('.')[0]
 
     for k, df in dict_df.items():
